@@ -1,0 +1,22 @@
+query topicDetails($id: ID!) {
+  topic(id: $id) {
+		id
+		name
+		description
+    coverImage
+		pointsTheory
+		pointsPractical
+    module {
+      id
+      name
+      course {
+        id
+        name
+      }
+    }
+    questions {
+      id
+      body
+    }
+	}
+}

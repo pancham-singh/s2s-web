@@ -1,0 +1,51 @@
+@import "~@src/style/mixins";
+
+@include font-face(
+  "Open Sans",
+  "@src/style/fonts/OpenSansCondensed-Bold",
+  700,
+  normal,
+  ttf
+);
+@include font-face(
+  "Open Sans",
+  "@src/style/fonts/OpenSansCondensed-Light",
+  300,
+  normal,
+  ttf
+);
+
+@include font-face(Roboto, "@src/style/fonts/Roboto-Thin", 100, normal, ttf);
+@include font-face(Roboto, "@src/style/fonts/Roboto-Light", 300, normal, ttf);
+@include font-face(Roboto, "@src/style/fonts/Roboto-Regular", 400, normal, ttf);
+@include font-face(Roboto, "@src/style/fonts/Roboto-Bold", 700, normal, ttf);
+@include font-face(Roboto, "@src/style/fonts/Roboto-Black", 900, normal, ttf);
+
+@include font-face(
+  Roboto,
+  "@src/style/fonts/Roboto-ThinItalic",
+  300,
+  italic,
+  ttf
+);
+@include font-face(
+  Roboto,
+  "@src/style/fonts/Roboto-LightItalic",
+  300,
+  italic,
+  ttf
+);
+@include font-face(
+  Roboto,
+  "@src/style/fonts/Roboto-BoldItalic",
+  700,
+  italic,
+  ttf
+);
+@include font-face(
+  Roboto,
+  "@src/style/fonts/Roboto-BlackItalic",
+  900,
+  italic,
+  ttf
+);

@@ -1,0 +1,45 @@
+@import '~@src/style/layout';
+@import '~@src/style/buttons';
+@import '~@src/style/variables';
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.answers {
+}
+
+.answers__heading {
+  font-size: 1.3em;
+}
+
+.new-answer-form {
+  border: 1px solid #eee;
+  padding: 10px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.controls {
+  margin: 0 20px;
+  display: flex;
+}
+
+.edit {
+  @extend .icon-btn;
+  border-color: #ddd;
+  margin-right: 10px;
+
+  background-image: url(@src/images/icons/pencil.svg);
+}
+
+.delete {
+  @extend .icon-btn;
+  border-color: #ddd;
+
+  background-image: url(@src/images/icons/trash.svg);
+}

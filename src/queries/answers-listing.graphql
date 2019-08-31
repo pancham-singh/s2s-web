@@ -1,0 +1,15 @@
+
+query answers($question:ID!){
+  answers(question:$question){
+    id
+    body
+    isCorrect
+    attachments{
+    url
+    }
+    question{
+    id
+    body
+    }
+  }
+}

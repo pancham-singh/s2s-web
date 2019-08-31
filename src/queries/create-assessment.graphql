@@ -1,0 +1,13 @@
+mutation createAssessment($name: String!, $topics: [AssessmentTopic!]!, $batch:ID!, $durationMinutes: Int!, $startDate: String!, $endDate: String!) {
+	createAssessment(name: $name, topics: $topics, batch: $batch, durationMinutes: $durationMinutes, startDate: $startDate, endDate: $endDate) {
+		id
+		name
+		topics{
+		    id
+		    name
+		}
+		durationMinutes
+	   startDate
+       endDate
+	}
+}

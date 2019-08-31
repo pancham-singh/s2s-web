@@ -1,0 +1,32 @@
+@import '~@src/style/variables';
+
+.container {
+  padding: 15px;
+  background: $color-new-item-creator-bg;
+  color: $color-new-item-creator-text;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  font-size: 1.1em;
+  cursor: pointer;
+
+  &:hover {
+    background-color: lighten($color-new-item-creator-bg, 2);
+    font-weight: 700;
+  }
+
+  &:active {
+    background-color: $color-new-item-creator-bg;
+  }
+}
+
+.plus-icon {
+  background-image: url(@src/images/icons/add-white.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 1.3em;
+  width: 1.3em;
+  margin-right: 3%;
+  display: inline-block;
+}

@@ -1,0 +1,13 @@
+@import '~@src/style/layout';
+
+.container {
+  background: #e7eaec;
+  min-height: 100vh;
+  padding: 40px;
+}
+
+.content {
+  @extend .content-box;
+  width: 80%;
+  margin: 0 auto;
+}

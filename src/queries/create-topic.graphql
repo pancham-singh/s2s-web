@@ -1,0 +1,15 @@
+mutation createTopic($name: String!, $description: String!, $coverImage: String!, $moduleId: ID!, $pointsTheory: Int, $pointsPractical: Int) {
+  createTopic(name: $name, description: $description, coverImage: $coverImage, module: $moduleId, pointsTheory: $pointsTheory, pointsPractical: $pointsPractical) {
+    id
+    name
+    description
+    coverImage
+		pointsTheory
+		pointsPractical
+    module {
+      id
+      name
+      description
+    }
+  }
+}

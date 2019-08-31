@@ -1,0 +1,22 @@
+mutation createTrainingCenter($name: String!, $address: String, $pia: ID!, $incharge: ID ) {
+	createTrainingCenter(
+		name: $name
+		address: $address
+		pia: $pia
+    incharge: $incharge
+	) {
+		id
+		name
+		address
+		pia {
+			id
+			name
+      email
+		}
+		incharges {
+			id
+			name
+      email
+		}
+	}
+}

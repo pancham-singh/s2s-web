@@ -1,0 +1,14 @@
+@import '~@src/style/variables';
+@import '~@src/style/buttons';
+
+.login-form {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-top: none;
+}
+
+.login-btn {
+  @extend .btn-primary;
+
+  margin: 10px auto;
+}

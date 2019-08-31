@@ -1,0 +1,16 @@
+query {
+	batches {
+		id
+		name
+	  startDate
+    endDate
+    course {
+      id
+      name
+    }
+    trainingCenter {
+      id
+      name
+    }
+	}
+}

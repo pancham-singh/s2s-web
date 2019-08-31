@@ -1,0 +1,104 @@
+@import '~@src/style/table';
+@import '~@src/style/buttons';
+@import '~@src/style/layout';
+
+.form-container {
+  max-width: 800px;
+  padding: 30px 40px;
+}
+
+.container {
+  @extend %center-container;
+}
+
+
+.content {
+  @extend .content-box;
+  margin-top: 20px;
+}
+.list-content {
+  @extend .content-box;
+  margin-top: 20px;
+  width:50%
+}
+input:checked ~.inputs{
+  display: block;
+}
+.inputs{
+  display: grid;
+}
+.topic-container{
+  width:100%;
+}
+.topic-form-container{
+  display: grid;
+}
+.modules-container {
+  max-height: 200px;
+  overflow: auto;
+  //border:1px outset  lightgray;
+}
+.list-item {
+  display: flex;
+  border:1px solid  lightgray;
+border-radius: 10px;
+  font-weight: bold;
+  position: relative;
+  width: 90%;
+  height: 40px;
+  color: black;
+  font-size: 1.5em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-left: 5px;
+  //justify-content: center;
+  line-height: 30px;
+  transition: all 100ms ease;
+ cursor: pointer;
+  &:hover {
+    font-size: 1.8em;
+  }
+  &:active {
+    background: lightgray;
+  }
+}
+.input-style {
+  height: 37px;
+  width:150px;
+  padding:5px;
+  border-radius: 5px;
+}
+.input-container {
+  padding-top: 10px;
+}
+.selected-topics {
+  display: flex;
+}
+.remove-btn {
+  background: red;
+  color:white;
+  border-radius: 5px;
+}
+.course-container {
+  display: flex;
+}
+.delete {
+  @extend .icon-btn;
+  border-color: #ddd;
+  height: 30px;
+  width: 30px;
+
+  background-image: url(@src/images/icons/trash.svg);
+}
+.select-topic{
+  line-height: 0px;
+}
+.delete-btn{
+  padding-left: 15%;
+}
+.topic-name {
+  width:80%;
+}
+.selected-topics-list{
+  display: flex;
+}

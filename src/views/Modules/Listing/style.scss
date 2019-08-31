@@ -1,0 +1,19 @@
+.container {
+  width: 100%;
+  margin: 40px auto;
+}
+
+.modules-nav {
+  margin: 0;
+  width: 100%;
+}
+
+.tiles {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tile {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}

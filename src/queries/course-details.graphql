@@ -1,0 +1,15 @@
+query courseDetails($id: ID!) {
+  course(id: $id) {
+    id
+    name
+    description
+    coverImage
+    category
+    modules {
+      id
+      name
+      description
+      coverImage
+    }
+  }
+}

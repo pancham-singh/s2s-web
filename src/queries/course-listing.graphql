@@ -1,0 +1,13 @@
+query {
+  courses {
+    id
+    name
+    description
+    coverImage
+    category
+    modules{
+    id
+    name
+    }
+  }
+}

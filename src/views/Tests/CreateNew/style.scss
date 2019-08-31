@@ -1,0 +1,114 @@
+@import '~@src/style/table';
+@import '~@src/style/buttons';
+@import '~@src/style/layout';
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.content {
+  @extend .content-box;
+  margin-top: 20px;
+}
+
+.listing {
+  display: block;
+}
+
+.table {
+  @extend %table;
+  margin: 30px auto;
+
+  td,
+  th {
+    padding: 20px;
+  }
+}
+
+.add-btn {
+  @include button($color-new-item-creator-bg, $color-new-item-creator-text);
+  padding-left: 44px;
+  margin: 15px 0;
+
+  background-image: url(@src/images/icons/add-white.svg);
+  background-position: 10px;
+  background-size: 20px;
+  background-repeat: no-repeat;
+}
+
+.actions-col {
+  display: flex;
+}
+
+.edit {
+  @extend .icon-btn;
+  border-color: #ddd;
+  margin-right: 10px;
+  height: 30px;
+  width: 30px;
+
+  background-image: url(@src/images/icons/pencil.svg);
+}
+
+.delete {
+  @extend .icon-btn;
+  border-color: #ddd;
+  height: 30px;
+  width: 30px;
+
+  background-image: url(@src/images/icons/trash.svg);
+}
+@import '~@src/style/buttons';
+
+.answer-section {
+  display: bloc;
+  padding: 0 15px;
+  margin: 20px 0;
+  border: 1px solid #eee;
+  position: relative;
+}
+
+.remove-answer {
+  @extend .icon-btn;
+
+  background-image: url('@src/images/icons/close.svg');
+  height: 28px;
+  width: 28px;
+  position: absolute;
+  top: -14px;
+  right: -14px;
+}
+.listing {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.answer-list-item {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #eee;
+  display: block;
+  width: 100%;
+  align-items: center;
+}
+
+.is-correct-input {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+}
+
+.body {
+  flex-grow: 1;
+}
+.imageThumb {
+  width:50px;
+  height: 50px;
+  align-content: center;
+  padding-right: 10px;
+}
+.submit-btn {
+  text-align: center;
+}

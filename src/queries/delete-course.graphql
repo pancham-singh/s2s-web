@@ -1,0 +1,5 @@
+mutation deleteCourse($id: ID!) {
+  deleteCourse(id: $id) {
+    id
+  }
+}

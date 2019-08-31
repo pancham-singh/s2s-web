@@ -1,0 +1,5 @@
+@import '~@src/style/layout';
+
+.container {
+  @extend %center-container;
+}

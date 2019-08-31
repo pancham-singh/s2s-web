@@ -1,0 +1,24 @@
+@import '~@src/style/variables';
+@import '~@src/style/buttons';
+
+.signup-container {
+}
+
+.signup-form {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-top: none;
+}
+
+.student-signup-btn {
+  @extend .btn-primary;
+
+  margin: 10px auto;
+  margin-right: 10px;
+}
+
+.teacher-signup-btn {
+  @extend .btn;
+
+  margin: 10px auto;
+}

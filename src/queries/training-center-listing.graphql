@@ -1,0 +1,9 @@
+query {
+	trainingCenters {
+		id
+		name
+	  address
+		pia { id, email, name }
+    incharges { id, email, name }
+	}
+}

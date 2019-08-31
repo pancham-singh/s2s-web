@@ -1,0 +1,13 @@
+query topics($moduleId: ID!) {
+	topics(module: $moduleId) {
+		id
+		name
+		description
+    coverImage
+    module {
+      id
+      name
+      description
+    }
+	}
+}

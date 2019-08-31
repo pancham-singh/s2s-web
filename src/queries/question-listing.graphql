@@ -1,0 +1,13 @@
+query questions($topicId: ID!) {
+	questions(topic: $topicId) {
+		id
+    body
+    type
+    points
+    attachments {
+      id
+      url
+      type
+    }
+	}
+}

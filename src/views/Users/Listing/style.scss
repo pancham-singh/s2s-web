@@ -1,0 +1,38 @@
+@import '~@src/style/table';
+@import '~@src/style/buttons';
+@import '~@src/style/layout';
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.user-listing {
+  display: block;
+}
+
+.users-table {
+  @extend %table;
+  margin: 30px auto;
+
+  td,
+  th {
+    padding: 20px;
+  }
+}
+
+.add-new-user-btn {
+  @include button($color-new-item-creator-bg, $color-new-item-creator-text);
+  max-width: 150px;
+  padding-left: 44px;
+
+  background-image: url(@src/images/icons/add-white.svg);
+  background-position: 10px;
+  background-size: 20px;
+  background-repeat: no-repeat;
+}
+
+.content {
+  @extend .content-box;
+  margin-top: 20px;
+}

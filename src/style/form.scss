@@ -1,0 +1,73 @@
+$color-border: #ddd;
+$color-error: #f00;
+
+.label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.input-group {
+  padding: 14px 0;
+  position: relative;
+
+  & > .input-error {
+    display: none;
+  }
+
+  &.has-error > .input-error {
+    display: block;
+  }
+
+  &.has-error > .form-control {
+    border: 1px solid $color-error;
+  }
+}
+
+.form-control {
+  font-size: 1em;
+  line-height: 1.5;
+  padding: 9px;
+  border: 1px solid $color-border;
+  background: transparent;
+  width: 100%;
+  border-radius: 5px;
+  outline: none;
+}
+
+.error {
+  color: $color-error;
+  position: absolute;
+  bottom: -5px;
+  font-size: 0.9em;
+}
+
+.input-error {
+  @extend .error;
+}
+
+.form-error {
+  padding: 10px;
+  border: 1px solid $color-error;
+  border-radius: 4px;
+  color: darken($color-error, 10);
+  background: rgba($color-error, 0.1);
+}
+
+.checkbox-form-group {
+  display: flex;
+  flex-flow: row-reverse;
+  margin: 20px 0;
+  align-items: center;
+
+  .label {
+    flex-grow: 1;
+    margin: 0;
+  }
+
+  .form-control {
+    width: auto;
+    height: 20px;
+    width: 20px;
+    margin-right: 20px;
+  }
+}

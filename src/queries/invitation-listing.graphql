@@ -1,0 +1,21 @@
+query {
+	invitations {
+		invitedEmail
+    invitedAs
+    validTill
+		id
+    invitedBy {
+      id
+      email
+      name
+    }
+		trainingCenter {
+			id
+			name
+		}
+    batch {
+      id
+      name
+    }
+	}
+}

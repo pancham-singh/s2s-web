@@ -1,0 +1,25 @@
+%center-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+%box {
+  background: #fff;
+  box-shadow: 0 0 6px 0px #2222;
+}
+
+.content-box {
+  @extend %box;
+
+  background: #fff;
+  padding: 30px 30px;
+}
+
+.no-items-msg {
+  color: grey;
+  margin: 20px;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

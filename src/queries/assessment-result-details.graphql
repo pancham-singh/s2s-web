@@ -1,0 +1,16 @@
+
+query assessmentResults($assessment: ID!){
+  assessmentResults(assessment: $assessment){
+    id
+    correctCount
+    incorrectCount
+    pendingCount
+    completedCount
+    assessment{
+      name
+      id
+    }
+  }
+}
+
+

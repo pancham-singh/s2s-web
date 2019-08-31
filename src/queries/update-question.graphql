@@ -1,0 +1,23 @@
+mutation updateQuestion($id: ID!, $body: String!, $topicId: ID!, $type: QuestionType!, $points: Int!, $attachments: [AttachmentInput], $answers: [AnswerInput]) {
+  updateQuestion(id: $id, body: $body, topic: $topicId, type: $type, points: $points, attachments: $attachments, answers: $answers) {
+		id
+    body
+    type
+    points
+    attachments {
+      id
+      url
+      type
+    }
+    answers {
+      id
+      body
+      isCorrect
+      attachments {
+        id
+        url
+        type
+      }
+    }
+  }
+}

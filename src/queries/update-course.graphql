@@ -1,0 +1,21 @@
+mutation updateCourse(
+  $id: ID!
+  $name: String
+  $description: String
+  $coverImage: String
+  $category: String
+) {
+  updateCourse(
+    id: $id,
+    name: $name,
+    description: $description,
+    coverImage: $coverImage,
+    category: $category
+  ) {
+    id,
+    name,
+    description,
+    coverImage,
+    category
+  }
+}

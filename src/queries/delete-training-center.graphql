@@ -1,0 +1,5 @@
+mutation deleteTrainingCenter($id: ID!) {
+  deleteTrainingCenter(id: $id) {
+    id
+  }
+}

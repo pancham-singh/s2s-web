@@ -1,0 +1,11 @@
+mutation updateAssessment($id:Int!, $name: String!, $topics: [AssesmentTopic!]!, $batch: String!, $durationMinutes: Int!, $startDate: String!, $endDate: String!) {
+	updateAssessment(id:$id,name:$name, topics:$topics, batch: $batch, durationMinutes: $durationMinutes, startDate: $startDate, endDate: $endDate) {
+		id
+		name
+		topics
+		batch,
+		durationMinutes
+	  startDate
+    endDate
+	}
+}

@@ -1,0 +1,42 @@
+@import '~@src/style/layout.scss';
+@import '~@src/style/buttons.scss';
+
+$color-modal-bg: #fff;
+
+.container {
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba($color-modal-bg, 0.7);
+  z-index: 99;
+  overflow: auto;
+  padding: 25px;
+}
+
+.content {
+  @extend %box;
+
+  margin: auto;
+  min-width: 600px;
+  background: $color-modal-bg;
+  border: 1px solid #eee;
+  position: relative;
+}
+
+.close-modal-btn {
+  @extend .icon-btn;
+  @extend %box;
+  z-index: 99;
+
+  background-image: url('@src/images/icons/close.svg');
+  height: 48px;
+  width: 48px;
+  position: absolute;
+  right: -25px;
+  top: -25px;
+}

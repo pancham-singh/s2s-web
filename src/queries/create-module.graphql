@@ -1,0 +1,13 @@
+mutation createModule($name: String!, $description: String!, $coverImage: String!, $courseId: ID!) {
+  createModule(name: $name, description: $description, coverImage: $coverImage, course: $courseId) {
+    id,
+    name,
+    description,
+    coverImage,
+    course {
+      id
+      name
+      description
+    }
+  }
+}

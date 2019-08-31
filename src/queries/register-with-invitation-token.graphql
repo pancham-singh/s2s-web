@@ -1,0 +1,19 @@
+mutation registerWithInvitationToken($token: String!, $password: String!, $name: String) {
+  registerWithInvitationToken(token: $token, password: $password, name: $name) {
+		token
+		user {
+			id
+			name
+      email
+			roles {
+				name
+				id
+				permissions {
+					id
+					name
+					description
+				}
+			}
+		}
+  }
+}

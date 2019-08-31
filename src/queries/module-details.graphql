@@ -1,0 +1,19 @@
+query moduleDetails($id: ID!) {
+  module(id: $id) {
+    id
+    name
+    description
+    coverImage
+    course {
+      id
+      name
+      description
+    }
+    topics {
+      id
+      name
+      description
+      coverImage
+    }
+  }
+}

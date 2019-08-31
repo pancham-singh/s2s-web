@@ -1,0 +1,29 @@
+query questionDetails($id: ID!) {
+  question(id: $id) {
+		id
+    body
+    type
+    points
+    topic {
+      id
+      module {
+        id
+      }
+    }
+    attachments {
+      id
+      url
+      type
+    }
+    answers {
+      id
+      body
+      isCorrect
+      attachments {
+        id
+        url
+        type
+      }
+    }
+	}
+}

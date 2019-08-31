@@ -1,0 +1,22 @@
+query invitationForToken($token: String!) {
+	invitationForToken(token: $token) {
+    token
+		invitedEmail
+    invitedAs
+    validTill
+		id
+    invitedBy {
+      id
+      email
+      name
+    }
+		trainingCenter {
+			id
+			name
+		}
+    batch {
+      id
+      name
+    }
+	}
+}

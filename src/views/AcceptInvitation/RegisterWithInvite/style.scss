@@ -1,0 +1,14 @@
+@import '~@src/style/variables';
+
+.error-msg {
+  h1 {
+    color: $color-danger;
+  }
+}
+
+.form-container {
+  padding: 20px;
+  margin: 50px 0;
+  border: 1px solid #eee;
+  max-width: 600px;
+}

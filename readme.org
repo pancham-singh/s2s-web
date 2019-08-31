@@ -1,0 +1,20 @@
+* Skill2Skills
+
+It's a general react app run along with [[https://www.apollographql.com/docs/react/][ApolloClient]] for managing data and
+state. All build instructions are kept in =/webpack= directory. NPM scripts are
+created for running and building the app for development as well as production
+environments.
+
+=/src/config.ts= contains configuration regarding things that change with
+different environments.
+
+App is meant to be self-hosted on a separate machine than API providing server.
+Any static server (e.g Nginx) shall serve the purpose of hosting built app.
+
+=/src/views/App/= shall be the entry point for getting into the app. It define
+routes and how different user's roles interact with routes e.g who has access to
+which route, which route is forbidden etc. Helpers are kept in =/src/lib=
+directory.
+
+=/src/components= dir contain general purpose reusable components while
+=/src/views= is for different route based pages.

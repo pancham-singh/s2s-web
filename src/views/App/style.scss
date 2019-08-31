@@ -1,0 +1,21 @@
+@import '~@src/style/normalize.scss';
+@import '~@src/style/fonts.scss';
+
+* {
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+
+body {
+  font-size: 14px;
+}
+
+h1 {
+  font-family: Open Sans, sans-serif;
+}
+
+:global {
+  @import '~@src/style/form.scss';
+  @import '~@src/style/buttons.scss';
+  @import '~@src/style/toast.scss';
+}

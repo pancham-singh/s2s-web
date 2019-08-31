@@ -1,0 +1,9 @@
+mutation createCourse($name: String!, $description: String!, $coverImage: String!, $category: String!) {
+  createCourse(name: $name, description: $description, coverImage: $coverImage, category: $category) {
+    id,
+    name,
+    description,
+    coverImage,
+    category
+  }
+}

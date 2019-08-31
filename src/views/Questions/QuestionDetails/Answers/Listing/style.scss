@@ -1,0 +1,30 @@
+.listing {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.answer-list-item {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #eee;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.is-correct-input {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+}
+
+.body {
+  flex-grow: 1;
+}
+.imageThumb {
+  width:50px;
+  height: 50px;
+  align-content: center;
+  padding-right: 10px;
+}

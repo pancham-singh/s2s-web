@@ -1,0 +1,5 @@
+mutation deleteModule($id: ID!) {
+  deleteModule(id: $id) {
+    id
+  }
+}

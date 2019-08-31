@@ -1,0 +1,9 @@
+mutation createAssessmentResult($assessment: ID!,$answer:AssessmentAnswerInput!, $correctCount:Int!, $incorrectCount:Int!, $completedCount:Int!, $pendingCount:Int!) {
+	createAssessmentResult(assessment: $assessment,answer: $answer,correctCount:$correctCount,incorrectCount:$incorrectCount, completedCount:$completedCount, pendingCount:$pendingCount) {
+		id,
+		correctCount
+		incorrectCount
+		completedCount
+		pendingCount
+	}
+}

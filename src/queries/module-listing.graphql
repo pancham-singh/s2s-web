@@ -1,0 +1,14 @@
+query modules($courseId: ID!) {
+	modules(course: $courseId) {
+		id
+		name
+		description
+    coverImage
+    course {
+      id
+      name
+      description
+      category
+    }
+	}
+}

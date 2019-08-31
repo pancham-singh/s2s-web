@@ -1,0 +1,39 @@
+@import '~@src/style/buttons';
+@import '~@src/style/layout';
+
+.attachments {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.attachment-row {
+  display: flex;
+  align-items: center;
+  width: 3.5em;
+  height: 3.8em;
+  margin: 1.4em 0;
+  margin-right: 0.7em;
+  position: relative;
+}
+
+.remove-attachment {
+  @extend .icon-btn;
+  @extend %box;
+
+  background-image: url('@src/images/icons/close.svg');
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 18px;
+  width: 18px;
+  position: absolute;
+  right: -8px;
+  top: -8px;
+}
+
+.add-new-btn {
+  @extend .btn;
+
+  margin: 1em 0;
+  margin-top: 0.7em;
+}

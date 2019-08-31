@@ -1,0 +1,18 @@
+mutation createQuestion($body: String!, $topicId: ID!, $type: QuestionType!, $points: Int!, $attachments: [AttachmentInput], $answers: [AnswerInput]) {
+  createQuestion(body: $body, topic: $topicId, type: $type, points: $points, attachments: $attachments, answers: $answers) {
+    id
+    body
+    type
+    points
+    attachments {
+      id
+      url
+      type
+    }
+    answers {
+      id
+      body
+      isCorrect
+    }
+  }
+}

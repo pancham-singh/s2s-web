@@ -1,0 +1,13 @@
+query assessment($id:ID!){
+	assessment(id:$id) {
+		name
+		id
+	   startDate
+       endDate
+      durationMinutes
+     questions{
+        id
+        body
+	 }
+}
+}

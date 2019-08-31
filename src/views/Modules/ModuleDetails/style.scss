@@ -1,0 +1,68 @@
+@import '~@src/style/layout';
+@import '~@src/style/buttons';
+@import '~@src/style/variables';
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.content {
+  @extend %box;
+
+  background: #fff;
+  padding: 30px 30px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.controls {
+  margin: 0 20px;
+  display: flex;
+}
+
+.edit {
+  @extend .icon-btn;
+  border-color: #ddd;
+  margin-right: 10px;
+
+  background-image: url(@src/images/icons/pencil.svg);
+}
+
+.delete {
+  @extend .icon-btn;
+  border-color: #ddd;
+
+  background-image: url(@src/images/icons/trash.svg);
+}
+
+.delete-prompt {
+  padding: 20px 40px;
+}
+
+.delete-prompt-title {
+  font-size: 1.7em;
+  font-weight: 700;
+  font-family: Open Sans, sans-serif;
+  margin: 15px 0;
+}
+
+.delete-prompt-subtitle {
+  font-size: 1.2em;
+}
+
+.delete-prompt-btns {
+  margin-top: 20px;
+}
+
+.cancel-prompt-btn {
+  @extend .btn;
+  margin-right: 15px;
+}
+
+.delete-prompt-delete-btn {
+  @include button($color-danger, #fff);
+}

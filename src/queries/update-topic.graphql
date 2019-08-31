@@ -1,0 +1,14 @@
+mutation updateTopic($id: ID!, $name: String, $description: String, $coverImage: String) {
+  updateTopic(id: $id, name: $name, description: $description, coverImage: $coverImage) {
+    id
+    name
+    description
+    coverImage
+		pointsTheory
+		pointsPractical
+    module {
+      id
+      name
+    }
+  }
+}

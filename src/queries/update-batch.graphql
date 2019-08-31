@@ -1,0 +1,16 @@
+mutation updateBatch($id: ID!, $name: String!, $startDate: String!, $endDate: String!, $trainingCenterId: ID, $courseId: ID) {
+	updateBatch(id: $id, name: $name, startDate: $startDate, endDate: $endDate, trainingCenter: $trainingCenterId, course: $courseId) {
+		id
+		name
+	  startDate
+    endDate
+    course {
+      id
+      name
+    }
+    trainingCenter {
+      id
+      name
+    }
+	}
+}

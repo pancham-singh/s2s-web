@@ -1,0 +1,15 @@
+mutation createAnswer($body: String!, $questionId: ID!, $isCorrect: Boolean!, $attachments: [AttachmentInput]) {
+  createAnswer(body: $body, question: $questionId, isCorrect: $isCorrect, attachments: $attachments) {
+    id
+    body
+    isCorrect
+    attachments {
+      id
+      url
+      type
+    }
+    question {
+      id
+    }
+  }
+}

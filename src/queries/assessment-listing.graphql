@@ -1,0 +1,9 @@
+query {
+	assessments {
+		name
+		id
+	  startDate
+    endDate
+durationMinutes
+	}
+}

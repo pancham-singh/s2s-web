@@ -1,0 +1,23 @@
+mutation updateTrainingCenter($id: ID!, $name: String, $address: String, $pia: ID!, $incharge: ID ) {
+	updateTrainingCenter(
+    id: $id,
+		name: $name
+		address: $address
+		pia: $pia
+    incharge: $incharge
+	) {
+		id
+		name
+		address
+		pia {
+			id
+			name
+      email
+		}
+		incharges {
+			id
+			name
+      email
+		}
+	}
+}

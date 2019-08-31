@@ -1,0 +1,57 @@
+@import '~@src/style/layout';
+@import '~@src/style/buttons';
+@import '~@src/style/variables';
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.content {
+  @extend %box;
+
+  background: #fff;
+  padding: 30px 30px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.controls {
+  margin: 0 20px;
+  display: flex;
+}
+
+.edit {
+  @extend .icon-btn;
+  border-color: #ddd;
+  margin-right: 10px;
+
+  background-image: url(@src/images/icons/pencil.svg);
+}
+
+.delete {
+  @extend .icon-btn;
+  border-color: #ddd;
+
+  background-image: url(@src/images/icons/trash.svg);
+}
+
+.questions {
+  display: flex;
+}
+
+.listing {
+  flex-grow: 1;
+}
+
+.selected-question-section {
+  @extend %box;
+  z-index: 3;
+
+  flex-grow: 1.3;
+  margin-left: 5px;
+  padding: 20px;
+}

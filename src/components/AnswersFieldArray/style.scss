@@ -1,0 +1,20 @@
+@import '~@src/style/buttons';
+
+.answer-section {
+  display: bloc;
+  padding: 0 15px;
+  margin: 20px 0;
+  border: 1px solid #eee;
+  position: relative;
+}
+
+.remove-answer {
+  @extend .icon-btn;
+
+  background-image: url('@src/images/icons/close.svg');
+  height: 28px;
+  width: 28px;
+  position: absolute;
+  top: -14px;
+  right: -14px;
+}

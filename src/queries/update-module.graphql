@@ -1,0 +1,13 @@
+mutation updateModule(
+  $id: ID!,
+  $name: String,
+  $description: String,
+  $coverImage: String
+) {
+  updateModule(id: $id, name: $name, description: $description, coverImage: $coverImage) {
+    id,
+    name,
+    description,
+    coverImage
+  }
+}

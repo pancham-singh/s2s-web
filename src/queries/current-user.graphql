@@ -1,0 +1,17 @@
+query currentUser {
+	currentUser {
+		id
+		name
+    email
+    token @client
+		roles {
+			name
+			id
+			permissions {
+				id
+				name
+				description
+			}
+		}
+	}
+}

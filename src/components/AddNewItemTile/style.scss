@@ -1,0 +1,38 @@
+$color-add-new-item-tile-bg: #021631;
+$color-add-new-item-tile-text: #fff;
+
+.container {
+  width: 200px;
+  height: 240px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  background-color: $color-add-new-item-tile-bg;
+  color: $color-add-new-item-tile-text;
+  margin-right: 20px;
+
+  &:hover {
+    background-color: lighten($color-add-new-item-tile-bg, 2);
+
+    .title {
+      font-weight: 700;
+    }
+  }
+
+  &:active {
+    background-color: $color-add-new-item-tile-bg;
+  }
+}
+
+.plus-icon {
+  background-image: url(@src/images/icons/add-white.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 24px;
+  width: 24px;
+  top: -20px;
+}

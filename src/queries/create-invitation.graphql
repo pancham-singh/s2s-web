@@ -1,0 +1,21 @@
+mutation createInvitation($invitedEmail: String!, $invitedAs: InvitedAs!, $validTill: String, $trainingCenterId: ID!, $batchId: ID) {
+	createInvitation(invitedEmail: $invitedEmail, invitedAs: $invitedAs, validTill: $validTill, trainingCenter: $trainingCenterId, batch: $batchId) {
+		invitedEmail
+    invitedAs
+    validTill
+		id
+    invitedBy {
+      id
+      email
+      name
+    }
+		trainingCenter {
+			id
+			name
+		}
+    batch {
+      id
+      name
+    }
+	}
+}
